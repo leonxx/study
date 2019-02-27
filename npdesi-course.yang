@@ -1,21 +1,13 @@
-module npdesi-course.yang {
-yang-version 1;
-namespace "http://npdesi.cisco.com/training;
-prefix npdesi;
-
-organization
-"Cisco Inc.;
-contact
-"chuck@npdesi.cisco.com;
-description
-"Here is a module that is used for basic switch configuration";
-
-revision 2019-02-27 {
-description
-"Initial Revision”;
+module npdesi-course {
+namespace "http://npdesi.cisco.com/training";
+prefix "npdesi";
+organization "Cisco Inc.";
+contact "chuck@npdesi.cisco.com";
+description "This a module that is used for basic switch configuration";
+revision 2016-08-24 {
+description "Initial revision.";
 reference "NPDESI COURSE MODULE";
 }
-
 container system {
 description "Container for system configurations";
 leaf hostname {
