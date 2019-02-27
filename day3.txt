@@ -1,0 +1,10 @@
+system.hostname = 1
+Import the objects from before in order to connect to the device and attempt an API call:
+from ydk.services import CRUDService
+
+from ydk.providers import NetconfServiceProvider
+
+provider = NetconfServiceProvider(address='xrv', port=830, username="cisco", password="cisco", protocol="ssh")
+
+crud = CRUDService()
+crud.create(provider, system)
