@@ -14,6 +14,7 @@
       commands:
         - show version
       provider: "{{ provider }}"
+    register: output
 
   - name: DUMP OUTPUT TO TERMINAL
     debug:
